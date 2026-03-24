@@ -21,6 +21,7 @@
 .cabecalho .photo{
     width: 200px;
     height: 200px;
+    border: 2px solid white;
     border-radius: 50%;
     margin-bottom: 20px;
     align-self: center;

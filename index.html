@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,90 +19,211 @@
   <link rel="stylesheet" href="assets/css/portfolio.css">
   <link rel="stylesheet" href="assets/css/experience.css">
 </head>
+
 <body>
   <div class="main">
     <header class="cabecalho">
-      <img src="assets/img/mi.png" alt="" class="photo" id="profile-photo" width="200px" height="auto" >
-      <h1 class="titulo">Olá, <br> eu sou <span id="profile-name">Jader G. Costa</span></h1>
+      <img src="assets/img/mi.jpg" alt="" class="photo" id="profile-photo" width="200px" height="auto">
+      <h1 class="titulo">Olá, <br> eu sou <span id="profile-name">Lorena Neves</span></h1>
       <div class="dados">
-        <p class="job"> <span id="profile-job">Carregando...</span></p>
-        <p class="location"> <span id="profile-location">Carregando...</span></p>
+        <p class="job"> <span id="profile-job">Designer Gráfico & Empreendedora</span></p>
+        <p class="location"> <span id="profile-location">Jaguaripe-BA</span></p>
         <p class="phone">
-          <a href="tel:75998243119"> <span id="profile-phone">Carregando...</span></a>
+          <a href="tel:75998243119"> <span id="profile-phone">(75) 99824-3119</span></a>
         </p>
         <p class="email">
-          <a href="mailto:lorenanevesoficial@gmail.com"> <span id="profile-email">Carregando@gmail.com...</span></a>
+          <a href="mailto:lorenanevesoficial@gmail.com"> <span
+              id="profile-email">lorenanevesoficial@gmail.com</span></a>
         </p>
       </div>
     </header>
-    <section class="acordeon">
+    <section class="acordeon open">
       <button class="trigger" type="button">
-        Skills
+        Bio
       </button>
       <div class="content">
-           <div skills>
-              <section class="tools">
-             <h3>Hard Skills:</h3>
-                 <ul id="hard-skills">
+        <div skills>
+          <section class="tools">
+            <h3>O que você irá encontrar:</h3>
+            <p>Olá! Seja bem-vinda(o). Aqui você vai conhecer meus trabalhos
+              e entender como adquirir peças criadas com cuidado, propósito e qualidade.</p>
+            <!--<ul id="hard-skills">
                     <li>
-                          <img src="" alt="">
+                   
                     </li>
-                 </ul>
-           </section>
-           <section class="personal">
-              <h3>Soft Skills:</h3>
-                 <ul id="soft-skills">
-                     <li>Carregando...</li>
-                  </ul>
-           </section>
-           </div>
-      </section>
-    <section class="acordeon">
-      <button class="trigger" type="button">
-        Idiomas
-      </button>
-      <div class="content">
-        <div class="languages">
-          <ul id="languages" >
-              <li>
-                Idiomas
-              </li>
-          </ul>
-      </div>
+                 </ul>-->
+          </section>
+          <section class="personal">
+            <h3>Trabalhamos com:</h3>
+            <ul id="soft-skills">
+              <li>Canecas Personalizadas</li>
+              <li>Topos de Bolo</li>
+              <li>Camisas</li>
+              <li>Encadernação</li>
+              <li>Plastificação</li>
+              <li>Impressões</li>
+            </ul>
+          </section>
+        </div>
     </section>
-    <section class="acordeon">
+
+
+    <section class="acordeon open">
       <button class="trigger" type="button">
-        Educação
+        Canecas Personalizadas
       </button>
+      <h3 id="descricao"> Canecas </h3>
       <div class="content">
-        <ul id="education">
-            
-        </ul>
-      </div>
-    </section>
-    <section class="acordeon">
-      <button class="trigger" type="button">
-        Portfolio
-      </button>
-      <div class="content">
+
         <ul id="portfolio">
-            
+          <li class="card" onclick="abrirModal('assets/img/saveiro.jpeg', 'Saveiro - Cultura de Jaguaripe')">
+            <img class="img_works" src="assets/img/saveiro.jpeg" alt="Caneca Saveiro">
+            <div class="overlay">
+              <p>Saveiro É da Vida</p>
+            </div>
+          </li>
+
+          <li class="card" onclick="abrirModal('assets/img/cup_church.jpeg', 'Igreja Nossa Senhora D\'Ajuda')">
+            <img class="img_works" src="assets/img/cup_church.jpeg" alt="Igreja Nossa Senhora D'Ajuda">
+            <div class="overlay">
+              <p>Igreja Nossa Senhora D'Ajuda</p>
+            </div>
+          </li>
+
+          <li class="card" onclick="abrirModal('assets/img/saveiro_border.jpeg', 'Arte Saveiro')">
+            <img class="img_works" src="assets/img/saveiro_border.jpeg" alt="Arte Saveiro">
+            <div class="overlay">
+              <p>Arte Saveiro</p>
+            </div>
+          </li>
+
+          <li class="card" onclick="abrirModal('assets/img/prision_of_salt.jpeg', 'Cadeia do Sal')">
+            <img class="img_works" src="assets/img/prision_of_salt.jpeg" alt="Cadeia do Sal">
+            <div class="overlay">
+              <p>Cadeia do Sal</p>
+            </div>
+          </li>
         </ul>
+
+        <div id="modal" class="modal" onclick="fecharModal()">
+          <span class="fechar">&times;</span>
+          <img class="modal-conteudo" id="imgModal">
+          <p id="legenda"></p>
+        </div>
+
+
       </div>
     </section>
-    <section class="acordeon">
+
+
+    <section class="acordeon open">
       <button class="trigger" type="button">
-        Experiências Profissionais
+        Topos de Bolo
       </button>
+      <h3 id="descricao"> Topos de bolo personalizados para deixar sua festa ainda mais especial. </h3>
       <div class="content">
-        <ul id="experience">
-          
+
+        <ul id="portfolio">
+          <li class="card" onclick="abrirModal('assets/img/toporosas.jpg', 'Saveiro - Cultura de Jaguaripe')">
+            <img class="img_works" src="assets/img/toporosas.jpg" alt="Caneca Saveiro">
+            <div class="overlay">
+              <p>Topo rosas</p>
+            </div>
+          </li>
+
+          <li class="card" onclick="abrirModal('assets/img/topoAnimais.jpg', 'Igreja Nossa Senhora D\'Ajuda')">
+            <img class="img_works" src="assets/img/topoAnimais.jpg" alt="Igreja Nossa Senhora D'Ajuda">
+            <div class="overlay">
+              <p>Topo Animais</p>
+            </div>
+          </li>
+
+          <li class="card" onclick="abrirModal('assets/img/creas.jpg', 'Arte Saveiro')">
+            <img class="img_works" src="assets/img/creas.jpg" alt="Arte Saveiro">
+            <div class="overlay">
+              <p>Topo Creas</p>
+            </div>
+          </li>
+
+          <li class="card" onclick="abrirModal('assets/img/Safari.jpg', 'Cadeia do Sal')">
+            <img class="img_works" src="assets/img/Safari.jpg" alt="Cadeia do Sal">
+            <div class="overlay">
+              <p>Topo safari</p>
+            </div>
+          </li>
         </ul>
+
+        <div id="modal" class="modal" onclick="fecharModal()">
+          <span class="fechar">&times;</span>
+          <img class="modal-conteudo" id="imgModal">
+          <p id="legenda"></p>
+        </div>
+
+
       </div>
     </section>
+
+
+    <section class="acordeon open">
+      <button class="trigger" type="button">
+        Cadernos personalizado e agendas
+      </button>
+      <h3 id="descricao">Tudo personalizado ao seu gosto. </h3>
+      <div class="content">
+
+        <ul id="portfolio">
+          <li class="card" onclick="abrirModal('assets/img/CadernoUni.jpg', 'Caderno Unicórnio')">
+            <img class="img_works" src="assets/img/CadernoUni.jpg" alt="Caderno Unicórnio">
+            <div class="overlay">
+              <p>Caderno Unicórnio</p>
+            </div>
+          </li>
+
+          <li class="card" onclick="abrirModal('assets/img/Caderno de Desenho Shrek.jpg', 'Caderno de desenho Shrek')">
+            <img class="img_works" src="assets/img/Caderno de Desenho Shrek.jpg" alt="Caderno de desenho Shrek">
+            <div class="overlay">
+              <p>Caderno de desenho Shrek</p>
+            </div>
+          </li>
+
+          <li class="card" onclick="abrirModal('assets/img/Agenda escolar.jpg', 'Agenda escolar')">
+            <img class="img_works" src="assets/img/Agenda escolar.jpg" alt="Agenda escolar">
+            <div class="overlay">
+              <p>Agenda escolar</p>
+            </div>
+          </li>
+
+          <li class="card" onclick="abrirModal('assets/img/Caderno Personalizado.jpg', 'Caderno Personalizado')">
+            <img class="img_works" src="assets/img/Caderno Personalizado.jpg" alt="Caderno Personalizado">
+            <div class="overlay">
+              <p>Caderno Personalizado</p>
+            </div>
+          </li>
+        </ul>
+
+        <div id="modal" class="modal" onclick="fecharModal()">
+          <span class="fechar">&times;</span>
+          <img class="modal-conteudo" id="imgModal">
+          <p id="legenda"></p>
+        </div>
+
+
+      </div>
+    </section>
+
     <script src="assets/js/acordeon.js"></script>
     <script src="assets/js/api.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/modal.js"></script>
   </div>
 </body>
+  <footer>Desenvolvido por Jader G. Costa 
+    <p class="phone">
+      Contato:
+          <a href="tel:75996295448"> 
+            <span id="profile-phone">(71) 99629-5448</span>
+          </a>
+    </p>
+    
+  </footer>
 </html>

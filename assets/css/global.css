@@ -24,9 +24,9 @@ body {
     /* rosa topo esquerdo */
     radial-gradient(
       700px 700px at 10% 5%,
-      rgba(247, 117, 205, 0.95) 0%,
-      rgba(237, 114, 203, 0.55) 25%,
-      rgba(20, 12, 19, 0.25) 45%,
+      rgba(255, 219, 244, 0.95) 0%,
+      rgba(248, 244, 247, 0.55) 25%,
+      rgba(168, 86, 216, 0.25) 45%,
       rgba(6, 6, 6, 0.0) 65%
     ),
 
@@ -43,8 +43,8 @@ body {
     /* base escura */
     linear-gradient(
       180deg,
-      #000000 0%,
-      #05040a 100%
+      #ffb5e0 0%,
+      #f841e0 100%
     );
 
   background-repeat: no-repeat;
@@ -95,8 +95,8 @@ body {
     /* base escura */
     linear-gradient(
       180deg,
-      #000000 0%,
-      #05040a 100%
+      #ffadcf 0%,
+      #ff69c0 100%
     );
 
   background-repeat: no-repeat;
@@ -120,3 +120,11 @@ body {
     font-display: swap;
 }
 
+
+footer{
+  text-align: center;
+  font-style: italic;
+}
+footer a{
+  color: antiquewhite;  
+}
